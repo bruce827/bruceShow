@@ -11,7 +11,7 @@
 		<meta charset="utf-8">
 		<title>Bruce’s workshop</title>
 		<meta http-equiv="content-language" content="zh-CN" />
-		<meta name="description" content="徐健的工作室" >
+		<meta name="description" content="徐健的工作室">
 		<meta name="viewport" content="width=device-width">
 
 		<link rel="stylesheet" href="css/bootstrap.css">
@@ -20,6 +20,8 @@
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/templatemo-misc.css">
 		<link rel="stylesheet" href="css/templatemo-style.css">
+		<!--模态窗样式-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<!--探测浏览器是否支持H5语义-->
 		<script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 	</head>
@@ -46,7 +48,7 @@
 				<div class="social-top col-md-6 col-sm-6">
 					<ul>
 						<li>
-							<a href="#" class="fa fa-weibo"></a>
+							<a href="#" class="fa fa-weibo modal__trigger" data-modal="#modal" ></a>
 						</li>
 						<li>
 							<a href="#" class="fa fa-qq"></a>
@@ -66,6 +68,26 @@
 					</ul>
 				</div>
 				<!-- 联系方式结束 -->
+
+				<!--弹出的模态窗-->
+				<div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
+					<div class="modal__dialog">
+						<div class="modal__content">
+							<h1>Modal</h1>
+							<p>Church-key American Apparel trust fund, cardigan mlkshk small batch Godard mustache pickled bespoke meh seitan. Wes Anderson farm-to-table vegan, kitsch Carles 8-bit gastropub paleo YOLO jean shorts health goth lo-fi. Normcore chambray locavore Banksy, YOLO meditation master cleanse readymade Bushwick.</p>
+
+							<!-- modal close button -->
+							<a href="" class="modal__close demo-close">
+								<svg class="" viewBox="0 0 24 24">
+									<path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+									<path d="M0 0h24v24h-24z" fill="none" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--弹出模态窗结束-->
+
 			</div>
 			<!--导航栏-->
 			<div class="main-header">
@@ -262,11 +284,12 @@
 		</script>
 		<!--jquery的导航插件-->
 		<script src="js/plugins.js"></script>
+		<!--模态窗插件-->
+		<script src="js/modal.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/main.js"></script>
 
 		<!-- 网页加载方法 -->
 		<script type="text/javascript">
-			//<![CDATA[
 			$(window).load(function() { // 确认所有组件已经加载
 				$('.loader-item').fadeOut(); // 第一次加载时候的缓慢消失效果
 				$('#pageloader').delay(350).fadeOut('slow'); // 使用白色div缓慢淡出的效果覆盖整个网页
@@ -274,7 +297,6 @@
 					'overflow-y': 'visible'
 				});
 			})
-			//]]>
 		</script>
 
 	</body>
