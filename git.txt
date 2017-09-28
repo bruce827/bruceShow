@@ -1,0 +1,85 @@
+win：
+配置账号：
+比如给用户TOM配置，他的邮箱是tom@163.com
+git config –global user.name “TOM”
+git config –global user.email ‘tom@163.com’
+
+配置成功后通过相同的命令查看
+git config –global user.name
+显示 TOM
+git config –global user.email
+显示 tom@163.com
+
+这就表明配置成功了
+
+
+在自己的工程目录下面建立代码仓库。
+
+在自己的工程目录下面右键启动git bash，
+输入git init
+
+git init执行成功后，git bash会显示
+Initialized empty Git repository in …..的字样，就表示初始化成功了。这个时候再你的工程目录下面有一个.git的文件夹，这个文件夹记录了本地所有的git操作。它是一个隐藏的文件夹。 
+
+
+4、将github项目库下载到本地：
+在工程目录下右键调出git bash,输入
+git clone 项目地址
+
+如果只提交某一个文件夹，比如只提交src文件夹，可以这样
+
+git add src
+
+git commit -m 后面跟的是提交代码的日志描述
+
+嗯，这样就可以了。
+
+git更新内容
+cd /d
+cd play/smrt-lbs
+git pull origin
+
+其他：
+git克隆项目(下载代码)
+#git clone http://192.168.0.223/git/test
+git clone git@github.com:laiweiwei/vms.git
+git clone git@github.com:syking/smrt-lbs-new.git
+复制粘帖方法：
+git bash控制台--标题栏--右键--编辑--标记/粘帖
+git更新内容
+cd /d
+cd play/smrt-lbs
+git pull origin
+提交到本地
+cd /d
+cd play/smrt-lbs
+git add .
+git commit -m "some string"
+提交到服务器
+git push -u origin master
+删除文件（直接删除后需要重新用命令删除）
+$ git rm  app/views/Application/index.html
+rm 'app/views/Application/index.html'
+查看文件状态
+git status
+
+------------------------------------------------------------------
+假设你的资料库默认分支为 master，当你有一个新的项目或者想法时
+创建一个分支，然后在分支上开发，最后再合并到 master 上
+创建新分支并命名，此处我们创建名为 new_sub 的分支 
+git branch new_sub
+移到新分支上
+git checkout new_sub
+开始你的工作并保存结果
+添加所改动的文件以便提交
+git add .
+提交改动
+git commit -m "made some changes"
+回到 master 主分支
+git checkout master
+合并到主分支
+git merge new_sub
+git branch 可显示所有的分支
+删除分支
+
+git branch -d new_sub 
