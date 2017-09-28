@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--兼容H5语义-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+		<title>Bruce’s workshop</title>
+		<meta http-equiv="content-language" content="zh-CN" />
+		<meta name="description" content="徐健的工作室" >
+		<meta name="viewport" content="width=device-width">
+
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/font-awesome.4.7.0.min.css">
+		<!--实现动态效果-->
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/templatemo-misc.css">
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<!--探测浏览器是否支持H5语义-->
+		<script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+	</head>
+
+	<body>
+		<!--[if lt IE 7]>
+            <p class="chromeframe">对不起，您使用的浏览器版本太旧已经无法适应本网站飘逸的布局,请使用更新的浏览器。</P>
+        <![endif]-->
+		<!--加载过渡页面-->
+		<section id="pageloader">
+			<div class="loader-item fa fa-spin colored-border"></div>
+		</section>
+		<!-- 加载过渡页面结束 -->
+
+		<header class="site-header container-fluid">
+			<div class="top-header">
+				<!--logo-->
+				<div class="logo col-md-6 col-sm-6">
+					<h1><a href="index.html"><em>bruce</em>workshop</a></h1>
+					<span>徐健的工作室</span>
+				</div>
+				<!-- logo结束 -->
+				<!--联系方式-->
+				<div class="social-top col-md-6 col-sm-6">
+					<ul>
+						<li>
+							<a href="#" class="fa fa-weibo"></a>
+						</li>
+						<li>
+							<a href="#" class="fa fa-qq"></a>
+						</li>
+						<li>
+							<a href="#" class="fa fa-linkedin"></a>
+						</li>
+						<li>
+							<a href="#" class="fa fa-google-plus"></a>
+						</li>
+						<li>
+							<a href="#" class="fa fa-weixin"></a>
+						</li>
+						<li>
+							<a href="#" class="fa fa-envelope"></a>
+						</li>
+					</ul>
+				</div>
+				<!-- 联系方式结束 -->
+			</div>
+			<!--导航栏-->
+			<div class="main-header">
+				<div class="row">
+					<!--左侧搜索与翻页按钮-->
+					<div class="main-header-left col-md-3 col-sm-6 col-xs-8">
+						<a id="search-icon" class="btn-left fa fa-search" href="#search-overlay"></a>
+						<!--强大的搜索引擎-->
+						<div id="search-overlay">
+							<a href="#search-overlay" class="close-search"><i class="fa fa-times-circle"></i></a>
+							<div class="search-form-holder">
+								<h2>在此输入关键词并且按下回车</h2>
+								<form id="search-form" action="#">
+									<input type="search" name="s" placeholder="" autocomplete="off" />
+								</form>
+							</div>
+						</div>
+						<!-- 强大的搜索引擎页面结束 -->
+						<a href="#" class="btn-left arrow-left fa fa-angle-left"></a>
+						<a href="#" class="btn-left arrow-right fa fa-angle-right"></a>
+					</div>
+					<!-- 左侧搜索与翻页按钮结束 -->
+					<!--导航-->
+					<div class="menu-wrapper col-md-9 col-sm-6 col-xs-4">
+						<a href="#" class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></a>
+						<ul class="sf-menu hidden-xs hidden-sm">
+							<li class="active">
+								<a href="index.html">首页</a>
+							</li>
+							<li>
+								<a href="services.html">正在研究</a>
+							</li>
+							<li>
+								<a href="#">我的项目</a>
+								<ul>
+									<li>
+										<a href="projects-2.html">完整</a>
+									</li>
+									<li>
+										<a href="projects-3.html">拓展</a>
+									</li>
+									<li>
+										<a href="project-details.html">项目管理系统</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">教程</a>
+								<ul>
+									<li>
+										<a href="blog.html">所有教程</a>
+									</li>
+									<li>
+										<a href="blog-single.html">正在开发</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">自我介绍</a>
+								<ul>
+									<li>
+										<a href="our-team.html">我的团队</a>
+									</li>
+									<li>
+										<a href="archives.html">工作时间线</a>
+									</li>
+									<li>
+										<a href="grids.html">基本情况</a>
+									</li>
+									<li>
+										<a href="404.html">404 Page</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="contact.html">给我留言</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 导航结束 -->
+				</div>
+			</div>
+			<!-- 导航栏结束 -->
+			<!--小屏尺寸，主要适用于手机端与平板，一些菜单将会隐藏-->
+			<div id="responsive-menu">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<!--<li>
+						<a href="services.html">研究</a>
+					</li>-->
+					<li>
+						<a href="#">项目</a>
+						<ul>
+							<li>
+								<a href="projects-2.html">完整</a>
+							</li>
+							<li>
+								<a href="projects-3.html">拓展</a>
+							</li>
+							<!--<li>
+								<a href="project-details.html">本项目</a>
+							</li>-->
+						</ul>
+					</li>
+					<li>
+						<a href="#">教程</a>
+						<!--<ul>
+							<li>
+								<a href="blog.html">Blog Masonry</a>
+							</li>
+							<li>
+								<a href="blog-single.html">Post Single</a>
+							</li>
+						</ul>-->
+					</li>
+					<li>
+						<a href="#">关于我</a>
+						<ul>
+							<!--<li>
+								<a href="our-team.html">Our Team</a>
+							</li>-->
+							<li>
+								<a href="archives.html">时间线</a>
+							</li>
+							<li>
+								<a href="grids.html">基本情况</a>
+							</li>
+							<!--<li>
+								<a href="404.html">404 Page</a>
+							</li>-->
+						</ul>
+					</li>
+					<li>
+						<a href="contact.html">联系我</a>
+					</li>
+				</ul>
+			</div>
+			<!--小屏尺寸结束-->
+		</header>
+		<!--展示内容-->
+		<div class="swiper-container">
+			<!--轮播图片-->
+			<div class="swiper-wrapper">
+				<!--轮播一-->
+				<div class="swiper-slide" style="background-image: url(images/slide1.jpg);">
+					<!--添加加深蒙版，显得图片更加高大上-->
+					<div class="overlay-s"></div>
+					<!--描述文字-->
+					<div class="slider-caption">
+						<div class="inner-content">
+							<h2>库伦沙漠野营</h2>
+							<p>盛夏过后沙漠的<b class="blue">夜晚</b><b class="green">有些冷</b>. 生篝火的时候偶然抬头，我看到了银河</p>
+							<a href="#" class="main-btn white">查看详情</a>
+						</div>
+					</div>
+					<!--描述文字结束-->
+				</div>
+				<!-- 轮播一结束 -->
+				<!--轮播二-->
+				<div class="swiper-slide" style="background-image: url(images/slide2.jpg);">
+					<div class="overlay-s"></div>
+					<div class="slider-caption">
+						<div class="inner-content">
+							<h2>重游上海迪士尼</h2>
+							<p>暴风雨后的航班有点慢</p>
+							<a href="#" class="main-btn white">查看详情</a>
+						</div>
+					</div>
+				</div>
+				<!--轮播二结束-->
+				<!--轮播三-->
+				<div class="swiper-slide" style="background-image: url(images/slide3.jpg);">
+					<div class="overlay-s"></div>
+					<div class="slider-caption">
+						<div class="inner-content">
+							<h2>欧洲自由行</h2>
+							<p>好事多磨的<b class="red">签证</b>、兵行险着的<b class="blue">飞机</b>、还有我放肆的<b class="yellow">假期</b>..</p>
+							<a href="#" class="main-btn white">查看详情</a>
+						</div>
+					</div>
+				</div>
+				<!-- 轮播三结束 -->
+
+			</div>
+		</div>
+		<!-- 展示内容结束 -->
+
+		<script src="js/vendor/jquery-1.11.0.min.js"></script>
+		<!--确保jquery准确加载-->
+		<script>
+			window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')
+		</script>
+		<!--jquery的导航插件-->
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+
+		<!-- 网页加载方法 -->
+		<script type="text/javascript">
+			//<![CDATA[
+			$(window).load(function() { // 确认所有组件已经加载
+				$('.loader-item').fadeOut(); // 第一次加载时候的缓慢消失效果
+				$('#pageloader').delay(350).fadeOut('slow'); // 使用白色div缓慢淡出的效果覆盖整个网页
+				$('body').delay(350).css({
+					'overflow-y': 'visible'
+				});
+			})
+			//]]>
+		</script>
+
+	</body>
+
+</html>
